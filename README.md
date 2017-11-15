@@ -6,7 +6,7 @@ python 2.7
 based off of https://github.com/byt3bl33d3r/chrome-decrypter  
 output is in csv format to the command line
 
-EXAMPLE:  
+# EXAMPLE:  
 
 ```cmd
 pip install pypiwin32
