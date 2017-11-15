@@ -9,5 +9,6 @@ output is in csv format to the command line
 EXAMPLE:  
 
 ```cmd
+pip install pypiwin32
 python remake_chrome_decrypt.py "C:\Users\USERNAME\AppData\Local\Google\Chrome\User Data\Default\Login Data" > accounts.csv
 ```
